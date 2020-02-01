@@ -1,5 +1,5 @@
-@here Checkbook Balancing problem (from CodeWars.com) by next Monday, February 3d:
-You are given a small checkbook to balance that is given to you as a string. Sometimes, this checkbook will be cluttered by non-alphanumeric characters.
+Checkbook Balancing problem (from CodeWars.com) by next Monday, February 3d:
+```You are given a small checkbook to balance that is given to you as a string. Sometimes, this checkbook will be cluttered by non-alphanumeric characters.
 The first line shows the original balance. Each other (not blank) line gives information: check number, category, and check amount.
 You need to clean the lines first, keeping only letters, digits, dots, and spaces. Next, return the report as a string. On each line of the report, you have to add the new balance. In the last two lines, return the total expenses and average expense. Round your results to two decimal places.
 Example Checkbook
@@ -31,3 +31,4 @@ Challenge Checkbook
 129 Stamps 13.6
 129 Fruits{} 17.6
 129 Market;! 128.00?;
+```
