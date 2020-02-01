@@ -16,11 +16,9 @@ int main()
         std::string desc;
         int num;
         int numOfEntries = 0;
-        float fcost;
         float balance;
         float totalExpense;
         float avgExpense;
-        float newBalance;
 
         getline(ifs, firstLine);
         balance = stof(firstLine);
@@ -29,11 +27,11 @@ int main()
         while (ifs >> num >> desc >> cost)
         {
             cost = std::regex_replace(cost, regex_chars, "");
-            float dcost = std::stof(cost.c_str());
+            float fcost = std::stof(cost.c_str());
             desc = std::regex_replace(desc, regex_chars, "");
 
-            totalExpense += dcost;
-            balance -= dcost;
+            totalExpense += fcost;
+            balance -= fcost;
             numOfEntries += 1;
 
             std::cout << std::fixed << std::setprecision(2) << "\n"
