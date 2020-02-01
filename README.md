@@ -2,6 +2,7 @@ Checkbook Balancing problem (from CodeWars.com) by next Monday, February 3d:
 ```You are given a small checkbook to balance that is given to you as a string. Sometimes, this checkbook will be cluttered by non-alphanumeric characters.
 The first line shows the original balance. Each other (not blank) line gives information: check number, category, and check amount.
 You need to clean the lines first, keeping only letters, digits, dots, and spaces. Next, return the report as a string. On each line of the report, you have to add the new balance. In the last two lines, return the total expenses and average expense. Round your results to two decimal places.
+
 Example Checkbook
 1000.00
 125 Market 125.45
@@ -9,6 +10,7 @@ Example Checkbook
 127 Video 7.45
 128 Book 14.32
 129 Gasoline 16.10
+
 Example Solution
 Original_Balance: 1000.00
 125 Market 125.45 Balance 874.55
@@ -18,6 +20,7 @@ Original_Balance: 1000.00
 129 Gasoline 16.10 Balance 801.73
 Total expense 198.27
 Average expense 39.65
+
 Challenge Checkbook
 1233.00
 125 Hardware;! 24.8?;
