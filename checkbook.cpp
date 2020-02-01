@@ -10,7 +10,7 @@ int main()
 
     if (ifs.good())
     {
-        const std::regex good_chars("[^a-zA-Z0-9.]");
+        const std::regex regex_chars("[^a-zA-Z0-9.]");
         std::string firstLine;
         std::string cost;
         std::string desc;
@@ -28,9 +28,9 @@ int main()
         std::cout << std::fixed << std::setprecision(2) << "Original_Balance: " << balance;
         while (ifs >> num >> desc >> cost)
         {
-            cost = std::regex_replace(cost, good_chars, "");
+            cost = std::regex_replace(cost, regex_chars, "");
             float dcost = std::stof(cost.c_str());
-            desc = std::regex_replace(desc, good_chars, "");
+            desc = std::regex_replace(desc, regex_chars, "");
 
             totalExpense += dcost;
             balance -= dcost;
@@ -43,8 +43,6 @@ int main()
         avgExpense = totalExpense / numOfEntries;
         std::cout << std::fixed << std::setprecision(2) << "Total expense " << totalExpense;
         std::cout << std::fixed << std::setprecision(2) << " Average expense " << avgExpense;
-
-        ifs.close();
 
         return 0;
     }
